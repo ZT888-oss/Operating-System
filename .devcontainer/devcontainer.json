@@ -1,0 +1,27 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile" 
+    },
+    "runArgs": [
+        "--privileged"
+    ],
+    "containerUser": "codespace",
+    "remoteUser": "codespace",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "llvm-vs-code-extensions.vscode-clangd"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "terminal.integrated.profiles.linux": {
+                    "zsh": {
+                        "path": "/usr/bin/zsh"
+                    }
+                }
+            }
+        }
+    }
+}

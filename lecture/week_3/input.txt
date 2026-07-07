@@ -1,0 +1,6 @@
+Hello, this is input from file: input.txt.
+I will be output when u run ./signal input.txt where argc == 2
+argv[0] == ./signal, argv[1] == input.txt
+
+FD currently == 0, which represent <stdin>, measn program tries to read from this file
+if u want to write in terminal, just try ./signal.
